@@ -17,6 +17,7 @@ const BlogDetails = () => {
     history.push("/")
   }
 
+
   return (
     <div className="blog-details">
       { isPending && <div>Loading...</div> }

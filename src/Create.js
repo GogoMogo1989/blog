@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useHistory } from "react-router";
 
 const Create = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [author, setAuthor] = useState('mario');
+  const history = useHistory()
  
 
   const handleSubmit = (e) => {
@@ -17,6 +19,7 @@ const Create = () => {
     }).then(() => {
       console.log("added new blog!")
     })
+    history.push("/")
   }
 
   return (

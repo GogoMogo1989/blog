@@ -17,6 +17,10 @@ const BlogDetails = () => {
     history.push("/")
   }
 
+  const Back= () => {
+    history.push("/")
+  }
+
 
   return (
     <div className="blog-details">
@@ -24,10 +28,11 @@ const BlogDetails = () => {
       { error && <div>{ error }</div> }
       { blog && (
         <article>
+          <button onClick={Back}>Back</button>
           <h2>{ blog.title }</h2>
           <p>Written by { blog.author }</p>
           <div>{ blog.body }</div>
-          <button onClick={handleClick}>delete</button>
+          <button onClick={handleClick}>Delete</button>
         </article>
       )}
     </div>

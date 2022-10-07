@@ -22,6 +22,10 @@ const Create = () => {
     history.push("/")
   }
 
+  const Back = () => {
+    history.push("/")
+  }
+
   return (
     <div className="create">
       <h2>Add a New Blog</h2>
@@ -49,6 +53,7 @@ const Create = () => {
         </select>
         <button>Add Blog</button>
       </form>
+      <button onClick={Back}>Back</button>
     </div>
   );
 }

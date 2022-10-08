@@ -42,7 +42,8 @@ const Create = () => {
           required
           value={body}
           onChange={(e) => setBody(e.target.value)}
-        ></textarea>
+        >
+        </textarea>
         <label>Blog author:</label>
         <select
           value={author}

@@ -4,7 +4,7 @@ import { useHistory } from "react-router";
 const Create = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
-  const [author, setAuthor] = useState('mario');
+  const [author, setAuthor] = useState('');
   const history = useHistory()
  
 
@@ -49,7 +49,7 @@ const Create = () => {
           onChange={(e) => setAuthor(e.target.value)}
         >
           <option value="David">David</option>
-          <option value="Mephisto">Mephisto the cat</option>
+          <option value="Mephisto">Mephisto the Cat</option>
         </select>
         <button>Add Blog</button>
       </form>
